@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 75cea966f1b3db345beb46c933dcffef
+timeCreated: 1475864327
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ' L Toe0'
+    100002: ' R Toe0'
+    100004: CG
+    100006: Head
+    100008: Jaw
+    100010: L Calf
+    100012: L Clavicle
+    100014: L Finger0
+    100016: L Foot
+    100018: L Forearm
+    100020: L Hand
+    100022: L HorseLink
+    100024: L Thigh
+    100026: L UpperArm
+    100028: Neck
+    100030: Neck1
+    100032: Neck2
+    100034: Pelvis
+    100036: R Calf
+    100038: R Clavicle
+    100040: R Finger0
+    100042: R Foot
+    100044: R Forearm
+    100046: R Hand
+    100048: R HorseLink
+    100050: R Thigh
+    100052: R UpperArm
+    100054: SimpleEyes
+    100056: Spine
+    100058: Spine1
+    100060: Tail
+    100062: Tail1
+    100064: Tail2
+    100066: TigerDragoSimple
+    100068: //RootNode
+    100070: WingBone1L
+    100072: WingBone1L02
+    100074: WingBone1L03
+    100076: WingBone1R
+    100078: WingBone1R02
+    100080: WingBone1R03
+    100082: WingBone2L
+    100084: WingBone2L02
+    100086: WingBone2L03
+    100088: WingBone2R
+    100090: WingBone2R02
+    100092: WingBone2R03
+    100094: WingBoneL
+    100096: WingBoneR
+    400000: ' L Toe0'
+    400002: ' R Toe0'
+    400004: CG
+    400006: Head
+    400008: Jaw
+    400010: L Calf
+    400012: L Clavicle
+    400014: L Finger0
+    400016: L Foot
+    400018: L Forearm
+    400020: L Hand
+    400022: L HorseLink
+    400024: L Thigh
+    400026: L UpperArm
+    400028: Neck
+    400030: Neck1
+    400032: Neck2
+    400034: Pelvis
+    400036: R Calf
+    400038: R Clavicle
+    400040: R Finger0
+    400042: R Foot
+    400044: R Forearm
+    400046: R Hand
+    400048: R HorseLink
+    400050: R Thigh
+    400052: R UpperArm
+    400054: SimpleEyes
+    400056: Spine
+    400058: Spine1
+    400060: Tail
+    400062: Tail1
+    400064: Tail2
+    400066: //RootNode
+    400068: TigerDragoSimple
+    400070: WingBone1L
+    400072: WingBone1L02
+    400074: WingBone1L03
+    400076: WingBone1R
+    400078: WingBone1R02
+    400080: WingBone1R03
+    400082: WingBone2L
+    400084: WingBone2L02
+    400086: WingBone2L03
+    400088: WingBone2R
+    400090: WingBone2R02
+    400092: WingBone2R03
+    400094: WingBoneL
+    400096: WingBoneR
+    2300000: SimpleEyes
+    3300000: SimpleEyes
+    4300000: SimpleEyes
+    4300002: TigerDragoSimple
+    9500000: //RootNode
+    13700000: TigerDragoSimple
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: CG
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

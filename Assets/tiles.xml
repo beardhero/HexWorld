@@ -1,0 +1,8 @@
+<set>
+  <tiles>
+<tile name="wfchars/waterCube" symmetry="X" weight="1.0"/>
+	</tiles>
+<neighbors>  <neighbor left="wfchars/waterCube 0" right="wfchars/waterCube 0"/>
+  <neighbor left="wfchars/waterCube 1" right="wfchars/waterCube 1"/>
+	</neighbors>
+</set>

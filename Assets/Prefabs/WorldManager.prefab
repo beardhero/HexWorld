@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &177840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 465024}
+  - component: {fileID: 11437394}
+  - component: {fileID: 11435054}
+  - component: {fileID: 11423006}
+  m_Layer: 0
+  m_Name: WorldManager
+  m_TagString: World Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &465024
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177840}
+  m_LocalRotation: {x: 0.017129246, y: -0.76237524, z: -0.18019204, w: 0.62130624}
+  m_LocalPosition: {x: 100, y: 0, z: 0}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11423006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9895b6bcf9fcf34b8d670645c4b910d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldPrefab: {fileID: 124366, guid: e32e99e140d8e4043946127d027758f8, type: 2}
+  tileWidth: 100
+  tileHeight: 100
+  tileCountW: 21
+  tileCountH: 21
+  hexagonal: 1
+--- !u!114 &11435054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2caf6f5ac35491fa6202a9ae29ab24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scale: 10
+  subdivisions: 4
+--- !u!114 &11437394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba8eb31765146f44b4c7afb0152d17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPrefab: {fileID: 429764, guid: 6a39ddbcc9eca4aa9a71bc26fe7788ad, type: 2}
+  activeWorld:
+    state: 
+    name: Home
+    size: 1
+    type: 1
+    season: 1
+    tilt: 1
+    element: 0
+    glyphProb: 0.01
+    origin:
+      x: 0
+      y: 0
+      z: 0
+    circumferenceInTiles: 0
+    circumference: 0
+    radius: 0
+    numberOfPlates: 0
+    seaLevel: 0
+    tiles: []
+    triTiles: []
+    pentagons: []
+  regularTileSet:
+    texture: {fileID: 2800000, guid: 3fbef6d0b7989b948863257c23f6b2c7, type: 3}
+    tileWidth: 100
+    tileHeight: 100
+    typeUVs:
+    - type: 6
+      minCoord:
+        x: 5
+        y: 3
+      maxCoord:
+        x: 5
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 3
+      minCoord:
+        x: 2
+        y: 3
+      maxCoord:
+        x: 2
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 4
+      minCoord:
+        x: 3
+        y: 5
+      maxCoord:
+        x: 3
+        y: 5
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 5
+      minCoord:
+        x: 4
+        y: 0
+      maxCoord:
+        x: 4
+        y: 0
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 2
+      minCoord:
+        x: 1
+        y: 1
+      maxCoord:
+        x: 1
+        y: 1
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 7
+      minCoord:
+        x: 6
+        y: 3
+      maxCoord:
+        x: 6
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 1
+      minCoord:
+        x: 0
+        y: 3
+      maxCoord:
+        x: 0
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 8
+      minCoord:
+        x: 7
+        y: 3
+      maxCoord:
+        x: 7
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 9
+      minCoord:
+        x: 8
+        y: 3
+      maxCoord:
+        x: 8
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 12
+      minCoord:
+        x: 9
+        y: 3
+      maxCoord:
+        x: 9
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 13
+      minCoord:
+        x: 10
+        y: 3
+      maxCoord:
+        x: 10
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 10
+      minCoord:
+        x: 11
+        y: 3
+      maxCoord:
+        x: 11
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 11
+      minCoord:
+        x: 12
+        y: 3
+      maxCoord:
+        x: 12
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 15
+      minCoord:
+        x: 13
+        y: 3
+      maxCoord:
+        x: 13
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 14
+      minCoord:
+        x: 14
+        y: 3
+      maxCoord:
+        x: 14
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 17
+      minCoord:
+        x: 15
+        y: 3
+      maxCoord:
+        x: 15
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 16
+      minCoord:
+        x: 16
+        y: 3
+      maxCoord:
+        x: 16
+        y: 3
+      sideCoord:
+        x: 0
+        y: 0
+  worldScale: 24
+  worldSubdivisions: 5
+  b: 0
+  randomAnt: 1
+  element: 1
+  seed: 
+  switchToType: 3
+  heightToSet: 1
+  frameDelay: 0
+  fB: 0
+  sT: 0
+  r: 0
+  hla: 000000000000000000000000000000000000010101010101000000000000000000000000000000000000010101010101000000000000000000000000000000000000000000000000000000000000010101010101
+  sequence: FFF
+  antSpeed: 1
+  track: 0
+  hDiffTolerance: 0.5
+  maxElementals: 12
+  eleSpawnMin: 1
+  eleSpawnMax: 2
+  activeElementals: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: worldPrefab
+      value: 
+      objectReference: {fileID: 124366, guid: e32e99e140d8e4043946127d027758f8, type: 2}
+    - target: {fileID: 0}
+      propertyPath: textMeshPrefab
+      value: 
+      objectReference: {fileID: 429764, guid: 6a39ddbcc9eca4aa9a71bc26fe7788ad, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 177840}
+  m_IsPrefabAsset: 1

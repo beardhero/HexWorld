@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: fc394b5da9776a148bc44fba64abe271
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 49ed98f3d6e9c3acb016f6c8fc67b200
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -4.4449596, y: 3.9188592, z: -4.0172057}
+      lookAt: {x: 1.9589269, y: -0.5224031, z: 1.3545768}
+      up: {x: 0.35948968, y: 0.8830821, z: 0.3015513}
+      fov: 30
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: cube
+    100002: cube#1
+    100004: dodecaedru
+    100006: dodecaedru#1
+    100008: icosaedru
+    100010: icosaedru#1
+    100012: octaedru
+    100014: octaedru#1
+    100016: //RootNode
+    100018: poliedru
+    100020: poliedru#1
+    400000: cube
+    400002: cube#1
+    400004: dodecaedru
+    400006: dodecaedru#1
+    400008: icosaedru
+    400010: icosaedru#1
+    400012: octaedru
+    400014: octaedru#1
+    400016: //RootNode
+    400018: poliedru
+    400020: poliedru#1
+    2100000: '[Color_A01]'
+    2100002: '[Color_D02]'
+    2100004: '[Color_F06]'
+    2100006: '[Color_H02]'
+    2100008: '[Color_K07]'
+    2100010: '[Translucent_Glass_Blue]'
+    2300000: cube
+    2300002: cube#1
+    2300004: dodecaedru
+    2300006: dodecaedru#1
+    2300008: icosaedru
+    2300010: icosaedru#1
+    2300012: octaedru
+    2300014: octaedru#1
+    2300016: poliedru
+    2300018: poliedru#1
+    3300000: cube
+    3300002: cube#1
+    3300004: dodecaedru
+    3300006: dodecaedru#1
+    3300008: icosaedru
+    3300010: icosaedru#1
+    3300012: octaedru
+    3300014: octaedru#1
+    3300016: poliedru
+    3300018: poliedru#1
+    4300000: Mesh cube
+    4300002: Mesh poliedru
+    4300004: Mesh octaedru
+    4300006: Mesh icosaedru
+    4300008: Mesh dodecaedru
+    4300010: Mesh cube#1
+    4300012: Mesh poliedru#1
+    4300014: Mesh icosaedru#1
+    4300016: Mesh octaedru#1
+    4300018: Mesh dodecaedru#1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

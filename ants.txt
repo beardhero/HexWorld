@@ -1,0 +1,29 @@
+HIGHWAYS
+PRLB
+PRBL
+LLSP
+RFFR
+SBBF -> many types
+PSSB -> forward and back then change direction
+PPPF
+SSLRS
+LPFBP
+SFPRB
+BPPRP - Chaos then glider highway into long period of chaos then rotated highway into long-period back-travelling highway
+FFBBSP
+
+OSCILLATORS
+BLRBB
+
+COOL SHIT
+RPR
+SLBL
+LSL
+FLRP
+LPRPR - fill
+
+SFPRSPBRFBRFS
+
+
+
+PRLBPRBLLLSPRFFRSBBFPSSBPPP

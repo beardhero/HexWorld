@@ -1,0 +1,13 @@
+Ideas for the procedural:
+=========================
+
+General pace:
++++++++++++++
+Like pixel dungeon but with:
+- crafting as the main advancement system
+- longer levels
+- less randomness/more risk/reward
+- more guided progression
+- hexagonal grid
+- more quests
+- multiple interaction action per object

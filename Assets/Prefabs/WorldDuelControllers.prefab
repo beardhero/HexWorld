@@ -1,0 +1,759 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &101542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414942}
+  - component: {fileID: 11441510}
+  - component: {fileID: 11433798}
+  - component: {fileID: 11458816}
+  m_Layer: 0
+  m_Name: WorldManager
+  m_TagString: World Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &103660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499640}
+  - component: {fileID: 11450110}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Game Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &103938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404000}
+  - component: {fileID: 11446280}
+  m_Layer: 0
+  m_Name: NetworkController
+  m_TagString: Network Controller
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &145814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 459916}
+  - component: {fileID: 11406908}
+  m_Layer: 0
+  m_Name: Combat Manager
+  m_TagString: Combat Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &165304
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 425246}
+  - component: {fileID: 11495690}
+  - component: {fileID: 11468736}
+  m_Layer: 0
+  m_Name: NetworkReceiver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &184746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427566}
+  m_Layer: 0
+  m_Name: WorldDuelControllers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404000
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2137527, y: -3.32409, z: 2.8139277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 425246}
+  m_Father: {fileID: 427566}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &414942
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427566}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &425246
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 404000}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &427566
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.2137527, y: 3.32409, z: -2.8139277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 499640}
+  - {fileID: 414942}
+  - {fileID: 404000}
+  - {fileID: 459916}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &459916
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427566}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &499640
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2137527, y: -3.58409, z: 2.8139277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427566}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11406908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0312fb0352a4b32bf4c2433ff0ea67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightArmy:
+    units:
+    - name: Light Unit
+      actor:
+        prefab: {fileID: 124866, guid: 44f6bccd3758e174ea3606daa629c410, type: 2}
+        instance: {fileID: 0}
+        instanceTrans: {fileID: 0}
+      stats:
+        maxHealth: 10
+        health: 10
+        moveSpeed: 2
+      currentLocation: 0
+  darkArmy:
+    units:
+    - name: Dark Unit
+      actor:
+        prefab: {fileID: 146736, guid: 31de039ae10e02b46976c8ef290233c3, type: 2}
+        instance: {fileID: 0}
+        instanceTrans: {fileID: 0}
+      stats:
+        maxHealth: 10
+        health: 10
+        moveSpeed: 2
+      currentLocation: 0
+--- !u!114 &11433798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2caf6f5ac35491fa6202a9ae29ab24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scale: 8
+  subdivisions: 1
+--- !u!114 &11441510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba8eb31765146f44b4c7afb0152d17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPrefab: {fileID: 429764, guid: 6a39ddbcc9eca4aa9a71bc26fe7788ad, type: 2}
+  activeWorld:
+    state: 
+    name: 
+    size: 0
+    type: 0
+    season: 0
+    tilt: 0
+    element: 0
+    glyphProb: 0.01
+    origin:
+      x: 0
+      y: 0
+      z: 0
+    circumferenceInTiles: 0
+    circumference: 0
+    radius: 0
+    numberOfPlates: 0
+    seaLevel: 0
+    tiles: []
+    triTiles: []
+    pentagons: []
+  regularTileSet:
+    texture: {fileID: 0}
+    tileWidth: 0
+    tileHeight: 0
+    typeUVs:
+    - type: 3
+      minCoord:
+        x: 0
+        y: 0
+      maxCoord:
+        x: 0
+        y: 0
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 1
+      minCoord:
+        x: 0
+        y: 0
+      maxCoord:
+        x: 0
+        y: 0
+      sideCoord:
+        x: 0
+        y: 0
+    - type: 2
+      minCoord:
+        x: 0
+        y: 0
+      maxCoord:
+        x: 0
+        y: 0
+      sideCoord:
+        x: 0
+        y: 0
+  worldScale: 1
+  worldSubdivisions: 1
+  b: 0
+  randomAnt: 0
+  element: 1
+  seed: 
+  switchToType: 0
+  heightToSet: 0
+  frameDelay: 60
+  fB: 0
+  sT: 0
+  r: 0
+  hla: 
+  sequence: 
+  antSpeed: 0
+  track: 0
+  hDiffTolerance: 0.1
+  maxElementals: 12
+  eleSpawnMin: 60
+  eleSpawnMax: 360
+  activeElementals: 1
+  elementals: []
+  AirElementals: []
+  EarthElementals: []
+  WaterElementals: []
+  FireElementals: []
+  LightElementals: []
+  DarkElementals: []
+  livingElementals: []
+  newAnt: {fileID: 0}
+  startingTile:
+    index: 0
+    plate: -1
+    generation: 0
+    height: 0
+    hexagon:
+      index: 0
+      center:
+        x: 0
+        y: 0
+        z: 0
+      normal:
+        x: 0
+        y: 0
+        z: 0
+      v1:
+        x: 0
+        y: 0
+        z: 0
+      v2:
+        x: 0
+        y: 0
+        z: 0
+      v3:
+        x: 0
+        y: 0
+        z: 0
+      v4:
+        x: 0
+        y: 0
+        z: 0
+      v5:
+        x: 0
+        y: 0
+        z: 0
+      v6:
+        x: 0
+        y: 0
+        z: 0
+      uv0i: 0
+      uv1i: 0
+      uv2i: 0
+      uv3i: 0
+      uv4i: 0
+      uv5i: 0
+      uv6i: 0
+      neighbors: 
+      isPentagon: 0
+    type: 1
+    typeToSet: 0
+    objectToPlace: -1
+    neighbors: 
+    boundary: 0
+    passable: 1
+    oceanTile: 0
+    rules: 
+    flip: 0
+    antPasses: 0
+    state: 0
+    os1: 0
+    os2: 0
+    os3: 0
+    os4: 0
+    os5: 0
+    os6: 0
+    ob1: 0
+    ob2: 0
+    ob3: 0
+    ob4: 0
+    ob5: 0
+    ob6: 0
+    ws1: 0
+    ws2: 0
+    ws3: 0
+    ws4: 0
+    ws5: 0
+    ws6: 0
+    wb1: 0
+    wb2: 0
+    wb3: 0
+    wb4: 0
+    wb5: 0
+    wb6: 0
+    fs1: 0
+    fs2: 0
+    fs3: 0
+    fs4: 0
+    fs5: 0
+    fs6: 0
+    fb1: 0
+    fb2: 0
+    fb3: 0
+    fb4: 0
+    fb5: 0
+    fb6: 0
+    es1: 0
+    es2: 0
+    es3: 0
+    es4: 0
+    es5: 0
+    es6: 0
+    eb1: 0
+    eb2: 0
+    eb3: 0
+    eb4: 0
+    eb5: 0
+    eb6: 0
+    ss1: 0
+    ss2: 0
+    ss3: 0
+    ss4: 0
+    ss5: 0
+    ss6: 0
+    sb1: 0
+    sb2: 0
+    sb3: 0
+    sb4: 0
+    sb5: 0
+    sb6: 0
+    as1: 0
+    as2: 0
+    as3: 0
+    as4: 0
+    as5: 0
+    as6: 0
+    ab1: 0
+    ab2: 0
+    ab3: 0
+    ab4: 0
+    ab5: 0
+    ab6: 0
+    ns1: 0
+    ns2: 0
+    ns3: 0
+    ns4: 0
+    ns5: 0
+    ns6: 0
+    nb1: 0
+    nb2: 0
+    nb3: 0
+    nb4: 0
+    nb5: 0
+    nb6: 0
+    pressure: 0
+    shear: 0
+    scale: 0
+    temp: 0
+    humidity: 0
+  forwardTile:
+    index: 0
+    plate: -1
+    generation: 0
+    height: 0
+    hexagon:
+      index: 0
+      center:
+        x: 0
+        y: 0
+        z: 0
+      normal:
+        x: 0
+        y: 0
+        z: 0
+      v1:
+        x: 0
+        y: 0
+        z: 0
+      v2:
+        x: 0
+        y: 0
+        z: 0
+      v3:
+        x: 0
+        y: 0
+        z: 0
+      v4:
+        x: 0
+        y: 0
+        z: 0
+      v5:
+        x: 0
+        y: 0
+        z: 0
+      v6:
+        x: 0
+        y: 0
+        z: 0
+      uv0i: 0
+      uv1i: 0
+      uv2i: 0
+      uv3i: 0
+      uv4i: 0
+      uv5i: 0
+      uv6i: 0
+      neighbors: 
+      isPentagon: 0
+    type: 1
+    typeToSet: 0
+    objectToPlace: -1
+    neighbors: 
+    boundary: 0
+    passable: 1
+    oceanTile: 0
+    rules: 
+    flip: 0
+    antPasses: 0
+    state: 0
+    os1: 0
+    os2: 0
+    os3: 0
+    os4: 0
+    os5: 0
+    os6: 0
+    ob1: 0
+    ob2: 0
+    ob3: 0
+    ob4: 0
+    ob5: 0
+    ob6: 0
+    ws1: 0
+    ws2: 0
+    ws3: 0
+    ws4: 0
+    ws5: 0
+    ws6: 0
+    wb1: 0
+    wb2: 0
+    wb3: 0
+    wb4: 0
+    wb5: 0
+    wb6: 0
+    fs1: 0
+    fs2: 0
+    fs3: 0
+    fs4: 0
+    fs5: 0
+    fs6: 0
+    fb1: 0
+    fb2: 0
+    fb3: 0
+    fb4: 0
+    fb5: 0
+    fb6: 0
+    es1: 0
+    es2: 0
+    es3: 0
+    es4: 0
+    es5: 0
+    es6: 0
+    eb1: 0
+    eb2: 0
+    eb3: 0
+    eb4: 0
+    eb5: 0
+    eb6: 0
+    ss1: 0
+    ss2: 0
+    ss3: 0
+    ss4: 0
+    ss5: 0
+    ss6: 0
+    sb1: 0
+    sb2: 0
+    sb3: 0
+    sb4: 0
+    sb5: 0
+    sb6: 0
+    as1: 0
+    as2: 0
+    as3: 0
+    as4: 0
+    as5: 0
+    as6: 0
+    ab1: 0
+    ab2: 0
+    ab3: 0
+    ab4: 0
+    ab5: 0
+    ab6: 0
+    ns1: 0
+    ns2: 0
+    ns3: 0
+    ns4: 0
+    ns5: 0
+    ns6: 0
+    nb1: 0
+    nb2: 0
+    nb3: 0
+    nb4: 0
+    nb5: 0
+    nb6: 0
+    pressure: 0
+    shear: 0
+    scale: 0
+    temp: 0
+    humidity: 0
+--- !u!114 &11446280
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74111ceccdbd8463ba26e1239f2b298b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NetworkPort: 7777
+  m_NetworkAddress: localhost
+  m_DontDestroyOnLoad: 1
+  m_RunInBackground: 1
+  m_SendPeerInfo: 0
+  m_MaxDelay: 0.01
+  m_LogLevel: 2
+  m_PlayerPrefab: {fileID: 0}
+  m_AutoCreatePlayer: 1
+  m_PlayerSpawnMethod: 0
+  m_OfflineScene: 
+  m_OnlineScene: 
+  m_SpawnPrefabs: []
+  m_CustomConfig: 0
+  m_MaxConnections: 4
+  m_ConnectionConfig:
+    m_ResendTimeout: 1200
+    m_DisconnectTimeout: 2000
+    m_ConnectTimeout: 2000
+    m_MinUpdateTimeout: 10
+    m_PingTimeout: 500
+    m_ReducedPingTimeout: 100
+    m_AllCostTimeout: 20
+    m_NetworkDropThreshold: 5
+    m_OverflowDropThreshold: 5
+    m_MaxConnectionAttempt: 10
+    m_AckDelay: 33
+    m_IsAcksLong: 0
+    m_Channels: []
+  m_Channels: 
+  m_UseSimulator: 0
+  m_SimulatedLatency: 1
+  m_PacketLossPercentage: 0
+  m_MatchHost: mm.unet.unity3d.com
+  m_MatchPort: 443
+  isNetworkActive: 0
+  matchMaker: {fileID: 0}
+  matchName: default
+  matchSize: 4
+--- !u!114 &11450110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8966a6fdf0c44ee8b6ec2826c4fd750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beginningState: 5
+--- !u!114 &11458816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9895b6bcf9fcf34b8d670645c4b910d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldPrefab: {fileID: 124366, guid: e32e99e140d8e4043946127d027758f8, type: 2}
+  tileWidth: 0
+  tileHeight: 0
+  tileCountW: 0
+  tileCountH: 0
+  hexagonal: 0
+--- !u!114 &11468736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94501b93864e34c7c9e4796036e0ad8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  username: 
+--- !u!114 &11495690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 187
+    i1: 123
+    i2: 130
+    i3: 207
+    i4: 64
+    i5: 62
+    i6: 84
+    i7: 229
+    i8: 107
+    i9: 188
+    i10: 11
+    i11: 239
+    i12: 181
+    i13: 146
+    i14: 90
+    i15: 101
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 184746}
+  m_IsPrefabAsset: 1

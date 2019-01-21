@@ -9,9 +9,9 @@ public class Rune {
 	[HideInInspector]public Tile tile;
 	[HideInInspector]public int hexTile;
 	[HideInInspector]public TileType type;
-	[HideInInspector]public int generation;
+	[HideInInspector]public int glyph;
 	[HideInInspector]public List<int> tileTargets;
-	public GameObject effect;
+	public RuneHex runeHex;
 
 	public Rune(){}
 	
@@ -28,7 +28,22 @@ public class Rune {
 		tile.uvx = Mathf.Abs(tile.uvx % 16) + 1;
 		type = (TileType)tile.uvx;
 		tile.uvy = Mathf.Abs(tile.uvy % 16) + 5;
-		generation = tile.uvy;
+		glyph = tile.uvy;
+		//determine runehex
+		//waterattacki test
+		type = TileType.Water;
+		glyph = 5;
+		switch(type) 
+		{
+			case 0: break;
+			case TileType.Water:
+				switch(glyph)
+				{
+					case 5: runeHex = new WaterAttackI(); runeHex.Initialize(); break;
+				} 
+			break;
+		}
+		
 	}
 	
 	public GameObject RuneGO()

@@ -114,37 +114,44 @@ public class World
     {
       ht.generation = zeroState;
     }
+
+    sc = 99; //Random.Range(99f,111f);
+    f = 0.0000024; //(double)Random.Range(.0000014618f,.000001918f); //(double)Random.Range(0.000000618f,0.000000918f);//.01618;// * Random.Range(0.5f,1.5f);// * i; //.0000024
+    l = 2.4; //(double)Random.Range(2.24f,4.42f);// * Random.Range(0.5f,1.5f);//2.4;
+    p = .2; //(double)Random.Range(.16f,.191f);// * Random.Range(0.5f,1.5f); //.24
+    o = 6; //Random.Range(3,7);// + i;
+    amplitude = 42; //Random.Range(24,42);
+    glyphProb /= 64;
     for(int i = 0; i < seed.Length; i++)
     {
-      //Heightmap perlin seed
       UnityEngine.Random.InitState(seed[i]);
       perlin.Seed = seed[i];
-      pSeed += seed[i];
-      sc += Random.Range(99f,99f);
-      f += (double)Random.Range(0.0000017618f,0.0000018918f); //(double)Random.Range(0.000000618f,0.000000918f);//.01618;// * Random.Range(0.5f,1.5f);// * i; //.0000024
-      l += (double)Random.Range(2.4f,3.6f);// * Random.Range(0.5f,1.5f);//2.4;
-      p += (double)Random.Range(0.40f,0.50f);// * Random.Range(0.5f,1.5f); //.24
-      o += Random.Range(3,7);// + i;
-      iterations += Random.Range(2,7);
+
+      float stepHeight = Random.Range(0.1f,0.5f);
+      PerlinPopulate(perlin,f,l,p,o,amplitude,sc,stepHeight);
     }
+    
+      //Heightmap perlin seed
+      //UnityEngine.Random.InitState(randseed);
+      //perlin.Seed = perlinseed;
+      //pSeed += seed[i];
+      
+      //iterations = 32;//Random.Range(2,7);
 
     //Populate with params found in seed
     //Normalize perlin values
     //pSeed /= seed.Length;
-    sc /= seed.Length;
-    f /= seed.Length;
-    l /= seed.Length;
-    p /= seed.Length;
-    iterations = (iterations % 6) + 1; //seed.Length;
-    o = (o % 32) + 3;
-    glyphProb /= iterations;
-    populationProb /= iterations;
-    Debug.Log("octave: " + o + " sc: " + sc + " freq: " + f + " lac: " + l + " pers: " + p + " iterations: " + iterations);
-    for(int i = 0; i <= iterations; i++)
-    {
-      float stepHeight = Random.Range(0.1f,1f);
-      PerlinPopulate(perlin,pSeed*i,f/2,l,p,o,amplitude,sc,stepHeight);
-    }
+    //sc /= seed.Length;
+    //f /= seed.Length;
+    //l /= seed.Length;
+    //p /= seed.Length;
+    //iterations = (iterations % 12) + 1; //seed.Length;
+    //o = (o % 32) + 3;
+
+    //glyphProb /= iterations;
+    //populationProb /= iterations;
+    //Debug.Log("octave: " + o + " sc: " + sc + " freq: " + f + " lac: " + l + " pers: " + p + " iterations: " + iterations);
+  
     
 
     //PerlinPopulate(perlin,pSeed,f*6,l,p,o,amplitude,sc);
@@ -175,10 +182,12 @@ public class World
       element = TileType.Water;
       foreach(HexTile ht in tiles)
       {
-        
-        if((ht.type == TileType.Water || ht.type == TileType.Fire) && ht.hexagon.scale < seaLevel)
+        if((ht.type == TileType.Water))//&& ht.hexagon.scale < seaLevel)
         {
-          ht.hexagon.scale = seaLevel;
+          if(ht.hexagon.scale > seaLevel)
+          {
+            ht.type = TileType.Earth;
+          }
         }
         
       }
@@ -191,9 +200,9 @@ public class World
       foreach(HexTile ht in tiles)
       {
         
-        if((ht.type == TileType.Water || ht.type == TileType.Fire) && ht.hexagon.scale < seaLevel)
+        if((ht.type == TileType.Water || ht.type == TileType.Fire))// && ht.hexagon.scale < seaLevel)
         {
-          ht.hexagon.scale = seaLevel;
+          //ht.hexagon.scale = seaLevel;
         }
         
       }
@@ -204,7 +213,7 @@ public class World
     {
       element = TileType.Vapor;
       //foreach(HexTile ht in tiles)
-//{
+      //{
         /* 
         if(ht.type == TileType.Vapor || ht.type == TileType.Crystal)
         {
@@ -266,7 +275,7 @@ public class World
       //choose which object to place
       if(ht.placeObject && numObjects <= maxObjects && !ht.oceanTile)
       {
-        //ht.passable = false;
+        ht.passable = false;
         numObjects++;
         switch(ht.type)
         {
@@ -289,10 +298,10 @@ public class World
       }
     }
   }
-  public void PerlinPopulate(Perlin perlin, int seed, double frequency, double lacunarity, double persistence, int octave, float amplitude, float scale, float stepHeight)
+  public void PerlinPopulate(Perlin perlin, double frequency, double lacunarity, double persistence, int octave, float amplitude, float scale, float stepHeight)
   {
-    Random.InitState(seed);
-    perlin.Seed = seed;
+    //Random.InitState(seed);
+    //perlin.Seed = seed;
     perlin.Frequency = frequency;
     perlin.Lacunarity = lacunarity;
     perlin.Persistence = persistence;
@@ -305,7 +314,7 @@ public class World
       double v1 = perlinVal*amplitude;//*i; 
       int h = (int)v1;
       //Debug.Log(v1);
-      ht.hexagon.scale += h/(1+stepHeight);//1.5f;
+      ht.hexagon.scale += h/(1+(stepHeight/2f));//1.5f;
       if(ht.generation == zeroState) //keep glyphs
       {
         int v = Mathf.Abs((int)ht.type + h + typeShift);
@@ -343,6 +352,7 @@ public class World
         if(neighborPopulation < 1)
         {
           ht.placeObject = true;
+          //ht.passable = false;
         }
       }
     }

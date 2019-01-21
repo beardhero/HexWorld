@@ -28,6 +28,6 @@ public class MoveCommand : Command
       t = CombatManager.activeWorld.tiles[unit.currentLocation].GetNeighbor(CombatManager.activeWorld.tiles,direction);
     }
     
-    CombatManager.instance.StartCoroutine(unit.MoveToTile(t, duration));
+    CombatManager.instance.StartCoroutine(unit.Move(t.index));
   }
 }

@@ -187,16 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224f505c85b114f278e7dbe653dfb610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitToSpawn:
-    prefab: {fileID: 0}
-    instance: {fileID: 0}
-    instanceTrans: {fileID: 0}
-    name: 
-    stats:
-      maxHealth: 0
-      health: 0
-      moveSpeed: 0
-    currentLocation: 0
+  unitToSpawn: {fileID: 0}
 --- !u!1 &462535336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1172021630188850, guid: 083ea85d76aa3204489fdde5e0915e64,
@@ -266,6 +257,10 @@ Prefab:
       propertyPath: activeTex
       value: 
       objectReference: {fileID: 8400000, guid: 0ca904eeaa24a994491224d448140971, type: 2}
+    - target: {fileID: 11437394, guid: 106408e00a16546738c43c52d7a99223, type: 2}
+      propertyPath: antSpeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 106408e00a16546738c43c52d7a99223, type: 2}
   m_IsPrefabAsset: 0

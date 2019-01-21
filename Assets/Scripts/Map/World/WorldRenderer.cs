@@ -46,7 +46,7 @@ public class WorldRenderer : MonoBehaviour
   public GameObject HexPlate(World world, TileSet tileSet, int i)
   {
     GameObject output = (GameObject)Instantiate(worldPrefab, Vector3.zero, Quaternion.identity);
-
+    output.layer = 0;
     MeshFilter myFilter = output.GetComponent<MeshFilter>();
     MeshCollider myCollider = output.GetComponent<MeshCollider>();
 

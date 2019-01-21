@@ -9,9 +9,11 @@ public enum HexDirection{R, P, L, S, B, F}; // right port left starboard back fr
 public class WorldManager : MonoBehaviour
 {
   // === Public ===
+  public GameObject player;
   public string worldCaptureName;
   public RenderTexture activeTex;
   [HideInInspector] public World activeWorld;
+  public GameObject combatManager;
   public TileSet regularTileSet;
   public float worldScale = 1;
   public int worldSubdivisions = 1;
@@ -200,6 +202,12 @@ public class WorldManager : MonoBehaviour
     //labelDirections = true;
 
     //DrawHexIndices();
+
+    if(combatManager != null)
+    {
+      CombatManager cm = combatManager.GetComponent<CombatManager>();
+      cm.Initialize(activeWorld);
+    }
 
     return activeWorld;
   }
@@ -957,6 +965,7 @@ public class WorldManager : MonoBehaviour
       ht.ChangeType(ht.typeToSet);
     }
   }
+
   public int[] CalculateGenerationalJoeLife(List<HexTile> tiles, int generations)
   {
     int toSet;
@@ -1006,6 +1015,18 @@ public class WorldManager : MonoBehaviour
     }
     return state;
   }
+  /* 
+  public void RuneLife(List<int> originTiles, Rune rune) //uses zeroState, oneState, rune.twostate (glyph state)
+  {
+    foreach(int t in originTiles)
+    {
+      HexTile ht = activeWorld.tiles[originTiles];
+      foreach(int n in ht.neighbors)
+      {
+
+      }
+    }
+  }*/
   public void JoeLife()
   {
      foreach(HexTile ht in activeWorld.tiles)
@@ -1110,11 +1131,6 @@ public class WorldManager : MonoBehaviour
       yield return new WaitForSeconds(Random.Range(eleSpawnMin, eleSpawnMax));
     }
   }
-  public IEnumerator Test(RaycastHit hit)
-  {
-    Debug.Log(hit.point);
-    yield return null;
-  }
   public int GetHitTile(RaycastHit hit)
   {
     HexTile hitTile = new HexTile();
@@ -1170,7 +1186,6 @@ public class WorldManager : MonoBehaviour
       tt.height = 1f + tt.height;
     }
   }
-  
   public void CapturePNG()
   {
     //GameObject selection = GameObject.Find ("Zone Prefab(Clone)");

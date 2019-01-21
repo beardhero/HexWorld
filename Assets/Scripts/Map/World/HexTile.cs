@@ -279,6 +279,57 @@ public class HexTile
 	catch(Exception e){Debug.Log(" bad tile: " + index + " uv0: " + hexagon.uv0i + " error: " + e);}
   }
 
+  public void MoveHighlight()
+  {
+	GameObject aW = GameObject.Find ("World");
+	GameObject gOWM = GameObject.Find ("WorldManager");
+	WorldManager wM = gOWM.GetComponent<WorldManager> ();
+	//World aWorld = wM.activeWorld;
+	MeshCollider[] meshC = aW.transform.GetComponentsInChildren<MeshCollider>();
+	Mesh mesh = meshC [plate].sharedMesh;
+	IntCoord newCoord = wM.regularTileSet.GetUVForType(type);
+	newCoord.y += 21; //highlight
+	//newCoord.y = generation;
+	Vector2 newOffset = new Vector2((newCoord.x * WorldRenderer.uvTileWidth), (newCoord.y * WorldRenderer.uvTileHeight));
+	Vector2[] uvs = mesh.uv;
+	try{
+	uvs [hexagon.uv0i] = WorldRenderer.uv0 + newOffset;
+	uvs [hexagon.uv1i] = WorldRenderer.uv1 + newOffset;
+	uvs [hexagon.uv2i] = WorldRenderer.uv2 + newOffset;
+	uvs [hexagon.uv3i] = WorldRenderer.uv3 + newOffset;
+	uvs [hexagon.uv4i] = WorldRenderer.uv4 + newOffset;
+	uvs [hexagon.uv5i] = WorldRenderer.uv5 + newOffset;
+	uvs [hexagon.uv6i] = WorldRenderer.uv6 + newOffset;
+	mesh.uv = uvs;
+	}
+	catch(Exception e){Debug.Log(" bad tile: " + index + " uv0: " + hexagon.uv0i + " error: " + e);}
+  }
+  public void MoveUnhighlight()
+  {
+	GameObject aW = GameObject.Find ("World");
+	GameObject gOWM = GameObject.Find ("WorldManager");
+	WorldManager wM = gOWM.GetComponent<WorldManager> ();
+	//World aWorld = wM.activeWorld;
+	MeshCollider[] meshC = aW.transform.GetComponentsInChildren<MeshCollider>();
+	Mesh mesh = meshC [plate].sharedMesh;
+	IntCoord newCoord = wM.regularTileSet.GetUVForType(type);
+	newCoord.y -= 21; //unhighlight
+	//newCoord.y = generation;
+	Vector2 newOffset = new Vector2((newCoord.x * WorldRenderer.uvTileWidth), (newCoord.y * WorldRenderer.uvTileHeight));
+	Vector2[] uvs = mesh.uv;
+	try{
+	uvs [hexagon.uv0i] = WorldRenderer.uv0 + newOffset;
+	uvs [hexagon.uv1i] = WorldRenderer.uv1 + newOffset;
+	uvs [hexagon.uv2i] = WorldRenderer.uv2 + newOffset;
+	uvs [hexagon.uv3i] = WorldRenderer.uv3 + newOffset;
+	uvs [hexagon.uv4i] = WorldRenderer.uv4 + newOffset;
+	uvs [hexagon.uv5i] = WorldRenderer.uv5 + newOffset;
+	uvs [hexagon.uv6i] = WorldRenderer.uv6 + newOffset;
+	mesh.uv = uvs;
+	}
+	catch(Exception e){Debug.Log(" bad tile: " + index + " uv0: " + hexagon.uv0i + " error: " + e);}
+  }
+
 	public void ChangeRule(bool[] bs)
 	{
 		rules = bs;

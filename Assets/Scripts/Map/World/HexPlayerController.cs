@@ -55,9 +55,15 @@ public class HexPlayerController : MonoBehaviour {
 		{
 			b[i] = (byte)Random.Range(0,256);
 		}
-		
-		/* 
 		runeBook = new Runebook(b);
+		GameObject runebook = Instantiate(runeBook.RunebookGO());
+		/* 
+		Transform runebookTrans = runebook.transform;
+		runebookTrans.parent = cam.transform;
+		runebookTrans.position = cam.transform.position + cam.transform.forward;
+		runebookTrans.LookAt(cam.transform);
+		*/
+		/*
 		foreach(Rune r in runeBook.runes)
 		{
 			Instantiate(r.RuneGO());
@@ -110,6 +116,7 @@ public class HexPlayerController : MonoBehaviour {
 		float horz = Input.GetAxis("Horizontal");
 		if(horz != 0)
 		{
+			//rigbody.velocity += -trans.right * vert * walkSpeed;
 			trans.RotateAround(trans.position, gravityDir, -horz * rotateSpeed);
 			animator.Play("Walk");
 		}

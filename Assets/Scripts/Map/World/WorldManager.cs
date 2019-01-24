@@ -1154,7 +1154,7 @@ public class WorldManager : MonoBehaviour
 
   World LoadWorld()
   {
-    return BinaryHandler.ReadData<World>(World.cachePath);
+    return BinaryHandler.ReadData<World>(Application.dataPath+"\\"+World.cachePath);
   }
    
   public IEnumerator TestDistance(int from)

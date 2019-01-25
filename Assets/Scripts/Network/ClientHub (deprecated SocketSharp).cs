@@ -34,7 +34,7 @@ public class ClientHub : NetworkBehaviour {
   [ClientRpc]
   void RpcReceiveChat(string msg)
   {
-    ChatUI.ReceiveChat(msg);
+    //ChatUI.ReceiveChat(msg);
   }
 
   // Login/config
@@ -50,7 +50,7 @@ public class ClientHub : NetworkBehaviour {
   {
     myObj.name = "A player named "+username;
 
-    ChatUI.SystemMessage(username+" has joined the game.");
+    //ChatUI.SystemMessage(username+" has joined the game.");
   }
 
   [Command]
@@ -64,7 +64,7 @@ public class ClientHub : NetworkBehaviour {
   void OnChatMessage(NetworkMessage msg)
   {
     MyMsg message = msg.ReadMessage<MyMsg>();
-    ChatUI.ReceiveChat(message.data);
+    //ChatUI.ReceiveChat(message.data);
   }
 
   public class MyMsg : MessageBase

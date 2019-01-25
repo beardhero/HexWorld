@@ -180,7 +180,7 @@ public class WorldManager : MonoBehaviour
     {
       g.transform.parent = currentWorldTrans;
     }
-    Debug.Log(activeWorld.tiles.Count);
+    //Debug.Log(activeWorld.tiles.Count);
      
     foreach(HexTile ht in activeWorld.tiles)
     {
@@ -616,7 +616,7 @@ public class WorldManager : MonoBehaviour
   {
     if(antGO == null)
     {yield break;}
-    Debug.Log(seq);
+    //Debug.Log(seq);
     int back, forward, right, left, port, starboard;
     back = forward = right = left = port = starboard = 0;
     TileType ele = onTile.type;

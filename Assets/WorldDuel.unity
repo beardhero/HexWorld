@@ -188,6 +188,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitToSpawn: {fileID: 0}
+--- !u!114 &33624273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 33624269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdef864b60815ee4898d564e2884d3b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serverName: localhost
+  port: 8080
+  roomName: chat
+--- !u!114 &33624274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 33624269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1a636a2f5d91649b881a6a7f897b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &462535336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1877408548875422, guid: 269f076f26168d647952ca3b0af138e2,

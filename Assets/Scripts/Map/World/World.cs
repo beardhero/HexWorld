@@ -167,7 +167,7 @@ public class World
     int crystal = 0;
 
     seaLevel = AverageTileHeight() - 1;// + 0.1f;
-    Debug.Log("sea level: " + seaLevel);
+    //Debug.Log("sea level: " + seaLevel);
     //water world
     foreach(HexTile ht in tiles)
     {

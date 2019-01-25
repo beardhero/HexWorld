@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 using System.IO;
 public enum RelativityState {None, Caching, MainMenu, WorldMap, ZoneMap, WorldDuel};
 
+[RequireComponent(typeof(NetworkManager))]
 public class GameManager : MonoBehaviour
 {
   // === Const & Inspector Cache ===
@@ -13,11 +14,16 @@ public class GameManager : MonoBehaviour
   public const string gameSeed = "doesthisneedtobemorethaneightchars";
 
   // === Static Cache ===
+  // State
   static RelativityState state;
-  public static Transform myTrans;
   public static RelativityState State {get{return state;} set{}}
+
+  // Engine Components
+  public static Transform myTrans;
   public static Camera cam;
-  public static MainUI mainUI;
+
+  // Network
+  public static NetworkManager networkManager;
 
   //For World
   public static World currentWorld;
@@ -37,7 +43,7 @@ public class GameManager : MonoBehaviour
   public static GameObject combatManagerObj;
   public static CombatManager combatManager;
   public static RoundManager roundManager;
-  
+
   void Update()
   {
     if(Input.GetKeyDown(KeyCode.Return))
@@ -46,17 +52,25 @@ public class GameManager : MonoBehaviour
     }
   }
   // *** Main Initializer ***
+  //    *The order of these initializations could potentially be very important*
   void Awake ()
   {
+    // -- 1. Object refs
     myTrans = transform;
     cam = Camera.main;
     if (Camera.main)
       zoneCameraControls = Camera.main.GetComponent<ZoneViewCamera>();
 
+    // -- 2. Network scripts
+    networkManager = GetComponent<NetworkManager>();
+    networkManager.Initialize();
+
+    // -- 3. Hex system
     // @TODO: Make these a singleton pattern
     //currentZone = new Zone(1); // Required so Hex doesn't null ref currentZone
     Hex.Initialize();
 
+    // -- 4. Scene scripts
     // Ideally, the only place state is manually set.
     state = beginningState;
     bool loading;
@@ -112,10 +126,6 @@ public class GameManager : MonoBehaviour
   {
     zoneManager = GameObject.FindWithTag("Zone Manager").GetComponent<ZoneManager>();
     zoneRenderer = zoneManager.GetComponent<ZoneRenderer>();
-
-    // --- Input
-
-    // --- Network
 
     // --- Zone
     if (currentZoneObjects != null && currentZoneObjects.Count > 0)
@@ -189,11 +199,6 @@ public class GameManager : MonoBehaviour
 
 
         File.WriteAllBytes ("Assets/Cards/card.png", bytes);
-  }
-
-  void OnGUI()
-  {
-    //mainUI.OnMainGUI(); TURN BACK ON LATER
   }
 
   public static void OnTapInput(Vector2 tap)

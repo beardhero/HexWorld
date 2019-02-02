@@ -1,0 +1,1 @@
+2/1/2019 6:24:25 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetssocketLog.txt.

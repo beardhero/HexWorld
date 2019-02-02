@@ -558,6 +558,9 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/Colyseus/Connection.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/WebSocket/WebSocket.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Gameplay/Combat/RuneHex.cs",
 		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Map/World/WorldRenderer.cs",
 		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Map/World/World.cs",
 		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Map/World/WorldManager.cs",
@@ -682,10 +685,7 @@
 		"/Users/cjcurrie/WTHNGit/dashboard-api/docker-compose.yml",
 		"/Users/cjcurrie/WTHNGit/WhatTheHealth/scripts/Routes.js",
 		"/Users/cjcurrie/WTHNGit/WhatTheHealth/old-wth/server.js",
-		"/Users/cjcurrie/WTHNGit/WhatTheHealth/content/event.json",
-		"/Users/cjcurrie/WTHNGit/WhatTheHealth/scripts/aes.js",
-		"/Users/cjcurrie/ec2-user@52.41.186.216",
-		"/Users/cjcurrie/WTHNGit/WhatTheHealth/config.env"
+		"/Users/cjcurrie/WTHNGit/WhatTheHealth/content/event.json"
 	],
 	"find":
 	{
@@ -701,9 +701,16 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"new WebSocket",
+			"mUrl",
+			"connect(",
+			"CreateConn",
+			"CONNECTION",
+			"e",
+			"connection",
 			"OnOpen",
 			"m_Messages",
 			"OpenSocketConnection",

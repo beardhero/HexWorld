@@ -13,7 +13,7 @@ public class ColyseusClient : MonoBehaviour {
   Room room;
 
   public string serverName = "localhost";
-  public string port = "8080";
+  public string port = "1111";
   public string roomName = "chat";
 
   // map of players
@@ -27,8 +27,8 @@ public class ColyseusClient : MonoBehaviour {
     client = new Client(uri);
     client.OnOpen += OnOpenHandler;
     client.OnClose += (object sender, EventArgs e) => Debug.Log ("CONNECTION CLOSED");
+    client.OnError += (object sender, Colyseus.ErrorEventArgs e) => Debug.Log (e);
 
-    Debug.Log ("Let's connect the client!");
     yield return StartCoroutine(client.Connect());
 
     Debug.Log ("Let's join the room!");

@@ -30,34 +30,11 @@ namespace Colyseus
 		protected Connection connection;
 		protected byte[] _previousState = null;
 
-		/// <summary>
-		/// Occurs when <see cref="Room"/> is able to connect to the server.
-		/// </summary>
 		public event EventHandler OnReadyToConnect;
-
-		/// <summary>
-		/// Occurs when the <see cref="Client"/> successfully connects to the <see cref="Room"/>.
-		/// </summary>
 		public event EventHandler OnJoin;
-
-		/// <summary>
-		/// Occurs when some error has been triggered in the room.
-		/// </summary>
 		public event EventHandler<ErrorEventArgs> OnError;
-
-		/// <summary>
-		/// Occurs when <see cref="Client"/> leaves this room.
-		/// </summary>
 		public event EventHandler OnLeave;
-
-		/// <summary>
-		/// Occurs when server sends a message to this <see cref="Room"/>
-		/// </summary>
 		public event EventHandler<MessageEventArgs> OnMessage;
-
-		/// <summary>
-		/// Occurs after applying the patched state on this <see cref="Room"/>.
-		/// </summary>
 		public event EventHandler<RoomUpdateEventArgs> OnStateChange;
 
 		/// <summary>

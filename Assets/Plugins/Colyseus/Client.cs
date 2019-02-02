@@ -8,6 +8,7 @@ using GameDevWare.Serialization;
 using GameDevWare.Serialization.MessagePack;
 
 using UnityEngine;
+using WebSocketSharp;
 
 namespace Colyseus
 {
@@ -36,24 +37,9 @@ namespace Colyseus
 			new RoomAvailable()
 		};
 
-		/// <summary>
-		/// Occurs when the <see cref="Client"/> connection has been established, and Client <see cref="id"/> is available.
-		/// </summary>
 		public event EventHandler OnOpen;
-
-		/// <summary>
-		/// Occurs when the <see cref="Client"/> connection has been closed.
-		/// </summary>
 		public event EventHandler OnClose;
-
-		/// <summary>
-		/// Occurs when the <see cref="Client"/> gets an error.
-		/// </summary>
 		public event EventHandler<ErrorEventArgs> OnError;
-
-		/// <summary>
-		/// Occurs when the <see cref="Client"/> receives a message from server.
-		/// </summary>
 		public event EventHandler<MessageEventArgs> OnMessage;
 
 		/// <summary>

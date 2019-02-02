@@ -229,7 +229,10 @@ public class WebSocket
 
 	public IEnumerator Connect()
 	{
+		Debug.Log("Connecting socket at "+mUrl.ToString());
 		m_Socket = new WebSocketSharp.WebSocket(mUrl.ToString());
+		m_Socket.Log.Level = WebSocketSharp.LogLevel.Debug;
+    	m_Socket.Log.File = @Application.dataPath+"/AsocketLog.txt";
 
 		m_Socket.OnMessage += (sender, e) => m_Messages.Enqueue (e.RawData);
 
@@ -249,7 +252,7 @@ public class WebSocket
 		};
 
 		m_Socket.OnError += (sender, e) => {
-			Debug.Log("WebSocketSharp Error!");
+			Debug.Log("WebSocketSharp Error: "+e.Message);
 			if (this.OnError != null) {
 				this.OnError.Invoke (this, new Colyseus.ErrorEventArgs (e.Message));
 			}

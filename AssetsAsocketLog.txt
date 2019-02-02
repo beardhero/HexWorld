@@ -1,0 +1,101 @@
+2/1/2019 6:41:40 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 6:41:42 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 6:41:42 PM|Trace|WebSocket.close|Start closing handshake.
+2/1/2019 6:41:42 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True
+2/1/2019 6:41:42 PM|Trace|WebSocket.close|End closing handshake.
+2/1/2019 6:43:07 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 6:43:07 PM|Warn |WebSocket.send|Sending has been interrupted.
+2/1/2019 6:43:09 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 6:43:09 PM|Trace|WebSocket.close|Start closing handshake.
+2/1/2019 6:43:09 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True
+2/1/2019 6:43:09 PM|Trace|WebSocket.close|End closing handshake.
+2/1/2019 6:43:32 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 6:43:32 PM|Warn |WebSocket.send|Sending has been interrupted.
+2/1/2019 6:43:34 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 6:43:34 PM|Trace|WebSocket.close|Start closing handshake.
+2/1/2019 6:43:34 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True
+2/1/2019 6:43:34 PM|Trace|WebSocket.close|End closing handshake.
+2/1/2019 6:44:29 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 6:44:29 PM|Warn |WebSocket.send|Sending has been interrupted.
+2/1/2019 6:44:31 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 6:44:31 PM|Trace|WebSocket.close|Start closing handshake.
+2/1/2019 6:44:31 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True
+2/1/2019 6:44:31 PM|Trace|WebSocket.close|End closing handshake.
+2/1/2019 6:45:48 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 6:45:48 PM|Warn |WebSocket.send|Sending has been interrupted.
+2/1/2019 6:45:50 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 6:45:50 PM|Trace|WebSocket.close|Start closing handshake.
+2/1/2019 6:45:50 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True
+2/1/2019 6:45:50 PM|Trace|WebSocket.close|End closing handshake.
+2/1/2019 6:57:02 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 6:57:02 PM|Warn |WebSocket.send|Sending has been interrupted.
+2/1/2019 6:57:04 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 6:57:04 PM|Trace|WebSocket.close|Start closing handshake.
+2/1/2019 6:57:04 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True
+2/1/2019 6:57:04 PM|Trace|WebSocket.close|End closing handshake.
+2/1/2019 6:57:52 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 6:57:52 PM|Warn |WebSocket.send|Sending has been interrupted.
+2/1/2019 6:57:54 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 6:57:54 PM|Trace|WebSocket.close|Start closing handshake.
+2/1/2019 6:57:54 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True
+2/1/2019 6:57:54 PM|Trace|WebSocket.close|End closing handshake.
+2/1/2019 6:58:24 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 6:58:26 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 6:58:26 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True
+2/1/2019 7:02:20 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/AssetsAsocketLog.txt.
+2/1/2019 7:02:22 PM|Fatal|WebSocket.acceptException|System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+                          
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                            at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+2/1/2019 7:02:22 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                          sent: False received: True

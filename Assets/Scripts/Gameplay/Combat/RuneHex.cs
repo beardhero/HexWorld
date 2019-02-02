@@ -41,7 +41,8 @@ public abstract class LifeHex : RuneHex
 public class WaterAttackI : SingleTargetHex{
 	public override void Initialize()
 	{
-		effect = (GameObject)Resources.Load("Effects/Water/Worb");
+		// This needs to be fixed.
+		//effect = (GameObject)Resources.Load("Effects/Water/Worb");
 		castedTiles = new List<int>();
 		amplitude = 1;
 		castTime = 0.2f;

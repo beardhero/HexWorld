@@ -229,17 +229,17 @@ public class WorldManager : MonoBehaviour
       track = !track;
     }
     //cyclical hex life
-		if(Input.GetKeyDown(KeyCode.Return))
-		{
-      b = !b;
-      if(b)
-      {
-        if(randomAnt){sequence = RandomAnt();}
-        GameObject ant = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-        StartCoroutine(LangstonsHex0(sequence, ant));
-      }
-			fB = 0;
-		}	
+		// if(Input.GetKeyDown(KeyCode.Return))
+		// {
+  //     b = !b;
+  //     if(b)
+  //     {
+  //       if(randomAnt){sequence = RandomAnt();}
+  //       GameObject ant = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+  //       StartCoroutine(LangstonsHex0(sequence, ant));
+  //     }
+		// 	fB = 0;
+		// }	
     
 		fB++;
 		if (b) 

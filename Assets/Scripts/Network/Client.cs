@@ -81,7 +81,7 @@ namespace Colyseus
 		/// </summary>
 		/// <param name="roomName">The name of the Room to join.</param>
 		/// <param name="options">Custom join request options</param>
-		public Room Join (string roomName, Dictionary<string, object> options = null)
+		public T Join<T> (string roomName, Dictionary<string, object> options = null) where T : Room, new()
 		{
 			if (options == null) {
 				options = new Dictionary<string, object> ();
@@ -90,7 +90,8 @@ namespace Colyseus
 			int requestId = ++this.requestId;
 			options.Add ("requestId", requestId);
 
-			var room = new Room (roomName, options);
+			T room = new T ();
+			room.Initialize(roomName, options);
 			this.connectingRooms.Add (requestId, room);
 
 			this.connection.Send (new object[]{Protocol.JOIN_ROOM, roomName, options});
@@ -103,12 +104,12 @@ namespace Colyseus
 		/// </summary>
 		/// <param name="roomName">The name of the Room to rejoin.</param>
 		/// <param name="sessionId">sessionId of client's previous connection</param>
-		public Room ReJoin (string roomName, string sessionId)
+		public T ReJoin<T> (string roomName, string sessionId) where T : Room, new()
 		{
 			Dictionary<string, object> options = new Dictionary<string, object> ();
 			options.Add ("sessionId", sessionId);
 
-			return this.Join(roomName, options);
+			return this.Join<T>(roomName, options);
 		}
 
 		/// <summary>
@@ -172,6 +173,7 @@ namespace Colyseus
 
 			if (code == Protocol.USER_ID) {
 				this.id = (string) message [1];
+				Debug.Log("Setting id based on server value: "+this.id);
 
 				if (this.OnOpen != null)
 					this.OnOpen.Invoke (this, EventArgs.Empty);
@@ -216,8 +218,9 @@ namespace Colyseus
                 this.roomsAvailableRequests.Remove(requestId);
 
 			} else {
-				if (this.OnMessage != null)
-					this.OnMessage.Invoke (this, new MessageEventArgs (message));
+				if (this.OnMessage != null){
+					this.OnMessage.Invoke (this, new MessageEventArgs(message));
+				}
 			}
 		}
 

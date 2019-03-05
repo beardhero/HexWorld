@@ -25,6 +25,12 @@ public class GameManager : MonoBehaviour
   // Network
   public static NetworkManager networkManager;
 
+  // GUI
+  public static GUIManager guiManager;
+
+  // Input
+  public static InputManager inputManager;
+
   //For World
   public static World currentWorld;
   public static GameObject worldManagerObj;
@@ -46,31 +52,37 @@ public class GameManager : MonoBehaviour
 
   void Update()
   {
-    if(Input.GetKeyDown(KeyCode.Return))
-    {
-      CapturePNG();
-    }
+    
   }
+  
   // *** Main Initializer ***
   //    *The order of these initializations could potentially be very important*
   void Awake ()
   {
-    // -- 1. Object refs
+    // -- * Object refs
     myTrans = transform;
     cam = Camera.main;
     if (Camera.main)
       zoneCameraControls = Camera.main.GetComponent<ZoneViewCamera>();
 
-    // -- 2. Network scripts
+    // -- * Input
+    inputManager = GetComponent<InputManager>();
+    inputManager.Initialize();
+
+    // -- * GUI scripts
+    guiManager = GetComponentInChildren<GUIManager>();
+    guiManager.Initialize();
+
+    // -- * Network scripts
     networkManager = GetComponent<NetworkManager>();
     networkManager.Initialize();
 
-    // -- 3. Hex system
+    // -- * Hex system
     // @TODO: Make these a singleton pattern
     //currentZone = new Zone(1); // Required so Hex doesn't null ref currentZone
     Hex.Initialize();
 
-    // -- 4. Scene scripts
+    // -- * Scene scripts
     // Ideally, the only place state is manually set.
     state = beginningState;
     bool loading;

@@ -229,15 +229,13 @@ public class WebSocket
 
 	public IEnumerator Connect()
 	{
-		Debug.Log("Connecting socket at "+mUrl.ToString());
 		m_Socket = new WebSocketSharp.WebSocket(mUrl.ToString());
-		m_Socket.Log.Level = WebSocketSharp.LogLevel.Debug;
-    	m_Socket.Log.File = @Application.dataPath+"/AsocketLog.txt";
+		//m_Socket.Log.Level = WebSocketSharp.LogLevel.Debug;
+    	//m_Socket.Log.File = @Application.dataPath+"/AsocketLog.txt";
 
 		m_Socket.OnMessage += (sender, e) => m_Messages.Enqueue (e.RawData);
 
 		m_Socket.OnOpen += (sender, e) => {
-			Debug.Log("WebSocketSharp Open!");
 			if (OnOpen != null) {
 				OnOpen.Invoke(sender, e);
 			}
@@ -245,7 +243,6 @@ public class WebSocket
 		};
 
 		m_Socket.OnClose += (sender, e) => {
-			Debug.Log("WebSocketSharp Close!");
 			if (OnClose != null) {
 				OnClose.Invoke(sender, e);
 			}

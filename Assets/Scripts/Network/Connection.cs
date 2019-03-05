@@ -31,7 +31,7 @@ namespace Colyseus
 		}
 
 		public void Send(object[] data)
-		{
+		{				
 			var serializationOutput = new MemoryStream ();
 			MsgPack.Serialize (data, serializationOutput);
 

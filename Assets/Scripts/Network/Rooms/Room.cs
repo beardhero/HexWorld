@@ -37,17 +37,11 @@ namespace Colyseus
 		public event EventHandler<MessageEventArgs> OnMessage;
 		public event EventHandler<RoomUpdateEventArgs> OnStateChange;
 
-		/// <summary>
-		/// Initializes a new instance of the <see cref="Room"/> class.
-		/// It synchronizes state automatically with the server and send and receive messaes.
-		/// </summary>
-		/// <param name="client">
-		/// The <see cref="Client"/> client connection instance.
-		/// </param>
-		/// <param name="name">The name of the room</param>
-		public Room (String name, Dictionary<string, object> options = null)
-			: base(new IndexedDictionary<string, object>())
-		{
+		public ColyseusClient colyseusClient;
+
+		public Room() : base(new IndexedDictionary<string, object>()){}
+
+		public void Initialize(String name, Dictionary<string, object> options = null){
 			this.name = name;
 			this.options = options;
 		}
@@ -61,8 +55,9 @@ namespace Colyseus
 			}
 		}
 
-		public IEnumerator Connect ()
+		public IEnumerator Connect (ColyseusClient c)
 		{
+			colyseusClient = c;
 			return this.connection.Connect ();
 		}
 

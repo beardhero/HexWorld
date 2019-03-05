@@ -31,3 +31,36 @@
                           sent: True received: True
 2/1/2019 7:50:43 PM|Debug|WebSocket.closeHandshake|Was clean?: True
                           sent: True received: True
+2/5/2019 5:56:57 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/Assets/AsocketLog.txt.
+2/5/2019 5:56:57 PM|Debug|WebSocket.send|A WebSocket connection request to ws://localhost:1111/:
+                          GET / HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Host: localhost:1111
+                          Sec-WebSocket-Key: rBKZIJ4g70j6W3HTCvKRbA==
+                          Sec-WebSocket-Version: 13
+2/5/2019 5:56:57 PM|Debug|WebSocket.receiveHandshakeResponse|A response to this WebSocket connection request:
+                          HTTP/1.1 101 Switching Protocols
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Accept: 2ZJgkelFzy/of46YkpQ9NUs5iA8=
+2/5/2019 5:56:58 PM|Warn |Logger.set_File|The current path to the log file has been changed to C:/Users/Kreion/Documents/HexWorld/Assets/AsocketLog.txt.
+2/5/2019 5:56:58 PM|Debug|WebSocket.send|A WebSocket connection request to ws://localhost:1111/bnJogSfuN?create=True&requestId=1&colyseusid=at-jgTXp6:
+                          GET /bnJogSfuN?create=True&requestId=1&colyseusid=at-jgTXp6 HTTP/1.1
+                          User-Agent: websocket-sharp/1.0
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Host: localhost:1111
+                          Sec-WebSocket-Key: Y2CSDX9aKJlpeXvmzOir6Q==
+                          Sec-WebSocket-Version: 13
+2/5/2019 5:56:58 PM|Debug|WebSocket.receiveHandshakeResponse|A response to this WebSocket connection request:
+                          HTTP/1.1 101 Switching Protocols
+                          Upgrade: websocket
+                          Connection: Upgrade
+                          Sec-WebSocket-Accept: UPlNwOaEOfF6zwtkUMbBSas9wiE=
+2/5/2019 5:57:02 PM|Info |WebSocket.close|Closing the WebSocket connection has already been done.
+2/5/2019 5:57:02 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                          sent: True received: True
+2/5/2019 5:57:02 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                          sent: True received: True

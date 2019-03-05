@@ -4,8 +4,16 @@
 		"selected_items":
 		[
 			[
-				"Input",
-				"InputManager"
+				"Message",
+				"MessageEventArgs"
+			],
+			[
+				"Socke",
+				"socketServer"
+			],
+			[
+				"socke",
+				"socketServer"
 			],
 			[
 				"Disab",
@@ -324,6 +332,10 @@
 				"textureCount"
 			],
 			[
+				"Input",
+				"InputController"
+			],
+			[
 				"Hotb",
 				"Hotbar1"
 			],
@@ -502,18 +514,6 @@
 			[
 				"tier",
 				"tier_in"
-			],
-			[
-				"name",
-				"name_in"
-			],
-			[
-				"Poti",
-				"PotionOfExperience"
-			],
-			[
-				"Alc",
-				"AlchemistsToolkit"
 			]
 		]
 	},
@@ -558,28 +558,32 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Client.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/GameManager.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Map/World/WorldManager.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Map/World/DuelPlayerController.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/UI/GUIManager.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/UI/ChatWindow.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/UI/Window.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/Colyseus/MessageEventArgs.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Rooms/ChatRoom.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/GameDevWare.Serialization/IndexedDictionary.cs",
 		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/NetworkManager.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Client.cs",
 		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/ColyseusClient.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Input/InputManager.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/Colyseus/Client.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/Colyseus/Connection.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/WebSocket/WebSocket.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/mcs.rsp",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/Colyseus/StateListener/StateContainer.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/Colyseus/Utils/ObjectExtensions.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Connection.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/UI/GUIManager.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Rooms/Room.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Map/World/WorldManager.cs",
 		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Gameplay/Combat/RuneHex.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Map/World/WorldRenderer.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Map/World/World.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/ClientHub (deprecated SocketSharp).cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/socket.io-unity/SocketIOScript.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Rooms/WorldRoom.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Rooms/MatchRoom.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Room.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/Rooms/ChatRoom - Copy.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/GameManager.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/Colyseus/Room.cs",
+		"/C/Users/Kreion/Documents/HexWorld-server/server/start.js",
+		"/C/Users/Kreion/Documents/HexWorld-server/server/package.json",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/WebSocket/WebSocket.cs",
+		"/C/Users/Kreion/Documents/HexWorld/Assets/Plugins/Colyseus/Client.cs",
+		"/C/Users/Kreion/Documents/HexWorld-server/server/script/Chat.js",
 		"/C/Users/Kreion/Documents/HexWorld/Assets/Sprites/Network/NetworkManager.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/Network/ClientHub.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/UI/ChatUI.cs",
-		"/C/Users/Kreion/Documents/HexWorld/Assets/Scripts/UI/MainUI.cs",
 		"/C/Users/Kreion/Desktop/colyseus-unity3d-master/Assets/ColyseusClient.cs",
 		"/C/Users/Kreion/Desktop/tic-tac-toe-master/server/index.js",
 		"/C/Users/Kreion/Desktop/tic-tac-toe-master/frontend/src/main.js",
@@ -681,11 +685,7 @@
 		"/Users/cjcurrie/WTHNGit/WhatTheHealth/migrations/20160816180726-dropTables.js",
 		"/Users/cjcurrie/WTHNGit/WhatTheHealth/database.json",
 		"/Users/cjcurrie/WTHNGit/WhatTheHealth/server.js",
-		"/Users/cjcurrie/WTHNGit/WhatTheHealth/scripts/RDSHelper.js",
-		"/Users/cjcurrie/WTHNGit/infrastructure/wth.tf",
-		"/Users/cjcurrie/WTHNGit/WhatTheHealth/migrations/20160815200751-launch.js",
-		"/Users/cjcurrie/WTHNGit/api-docs/what-the-health.restdown",
-		"/Users/cjcurrie/WTHNGit/WhatTheHealth/migrations/20160808162258-testMigration.js"
+		"/Users/cjcurrie/WTHNGit/WhatTheHealth/scripts/RDSHelper.js"
 	],
 	"find":
 	{
@@ -696,28 +696,152 @@
 		"height": 104.0,
 		"where_history":
 		[
+			"<open folders>",
 			"<current file>",
+			"<open folders>,C:\\Users\\Kreion\\Loveway",
+			"<open folders>",
+			"",
+			"tile.x",
+			"",
+			"/Users/cjcurrie/square\\ 2d\\ procedural\\ world\\ gen/Assets/Editor",
+			"/Users/cjcurrie/Desktop/PD-classes-master",
+			"/Users/cjcurrie/Desktop/shattered-pixel-dungeon-master/src/com/shatteredpixel/shatteredpixeldungeon",
 			""
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
-			"room",
-			"onclose",
-			"new WebSocket",
-			"mUrl",
-			"connect(",
-			"CreateConn",
-			"CONNECTION",
-			"e",
-			"connection",
-			"OnOpen",
-			"m_Messages",
-			"OpenSocketConnection",
-			"DoOpen"
+			"DataChange",
+			"some_command",
+			"id",
+			"datachange",
+			"listeners",
+			"OnStateChange",
+			"chatRoom",
+			"initialization",
+			"chat",
+			"chatRoom",
+			"callback",
+			"listen",
+			"liste",
+			"listen",
+			"rooms",
+			"chatroom",
+			"client",
+			"chatroom",
+			"num",
+			"series",
+			"margin",
+			"fa fa-github",
+			"ds",
+			"h4",
+			"sidebar",
+			"h1",
+			"ul",
+			"h5",
+			"\"/>",
+			"navigation",
+			"LastModifierEmail = \"<kreion@loveway.one>\"",
+			"margin",
+			"padding",
+			"Introductions",
+			"HexCoordinates",
+			"coordinates",
+			"camera",
+			"sideCoord",
+			"Hex",
+			"enum TileType",
+			"struct TileType",
+			"class TileType",
+			"IntCoord",
+			"class IntCoord",
+			"Zone",
+			"getlatestposts",
+			"where",
+			"});\n",
+			"UPDATE",
+			"gracefulShutdown",
+			"conn.release();",
+			"GetLatest",
+			"GetScore",
+			"TIMESTAMP",
+			"token",
+			"reaction",
+			"update",
+			"reaction",
+			"release",
+			"token",
+			"console.log",
+			"locked_down",
+			"next",
+			"offset",
+			"links",
+			"md5",
+			"crypt",
+			"verify",
+			"Crypt",
+			"links",
+			"authorUsername",
+			"\"created\": \"1466811315\"",
+			"elastic",
+			"\"type",
+			"created",
+			"date",
+			"comment",
+			"CognitoIdentityCredentials",
+			"TopicArn",
+			"success",
+			"successfully",
+			"sucessfully",
+			"connect",
+			"Success",
+			"console.log",
+			"user",
+			"['",
+			"sending",
+			"ParseInput",
+			"FBSuccessCallback",
+			"ParseRemoteOption",
+			"auto",
+			"FB",
+			"docClient",
+			"ToUri",
+			"Uri",
+			"class Uri",
+			"Uri.TryCreate",
+			"TryCreate",
+			"TryCreateUri",
+			"MaybeUri",
+			"ToUri",
+			"url",
+			"onnect",
+			"UpdateMenuArchetypes",
+			"delegate",
+			"SocketOpened",
+			"Opened(",
+			"SocketOpened",
+			"MessageEventArgs",
+			"authResponse",
+			"typemap",
+			"Submit",
+			"amplitude",
+			"GetNearbyDefinedNeighborVector",
+			"DefineNeighborsFromNeighbors",
+			"GetNearbyDefinedNeighborVector",
+			"NeighborsDefined",
+			"findneigh",
+			"traverse",
+			"finalhexes",
+			"build",
+			"persistence",
+			"normal",
+			"rotate",
+			"ControlX",
+			"QuadrantActive",
+			"Scale"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -725,8 +849,134 @@
 		"regex": false,
 		"replace_history":
 		[
-			"chatRoom",
-			"OpenSocketConnection"
+			"chat",
+			"",
+			"HexCoordinate",
+			"cam",
+			"Shutdown",
+			"sha1",
+			"md5",
+			"token",
+			"\"created\": \"Tue Jul 05 2016 23:35:51 GMT-0600 (MDT)\"",
+			"dAmplitude",
+			"hTiles",
+			"SerializableVector3",
+			"tri.left",
+			"tri.right",
+			"tri.top",
+			"output",
+			"Hex.bisect",
+			"Hex.",
+			"Settings.edge",
+			"List",
+			"padding",
+			"chunk",
+			"atlasUVs",
+			"VC",
+			"VCE",
+			"m",
+			"",
+			"offset.x",
+			"offset.y",
+			"tile.y",
+			"tile.x",
+			"string",
+			"bool",
+			" Price(",
+			"bool",
+			"base",
+			"List",
+			"string",
+			"",
+			"string",
+			"",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"",
+			"final",
+			"bool",
+			"string",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"string",
+			" _act()",
+			"Add(",
+			"List",
+			"string",
+			"",
+			"string",
+			"List",
+			"",
+			"bool",
+			"List",
+			"string",
+			"",
+			"bool",
+			"string",
+			"",
+			"string",
+			"",
+			"string",
+			"List",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"string",
+			"",
+			"List",
+			"string",
+			"",
+			"MyTerrain",
+			"",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"string",
+			"List",
+			"string",
+			"",
+			"bool",
+			"string",
+			"",
+			"bool",
+			"List",
+			"string",
+			"",
+			"LockedExit",
+			"LockedDoor",
+			"TerrainType",
+			"bool",
+			"List",
+			"string",
+			"",
+			"string",
+			"List",
+			"string",
+			"",
+			"bool",
+			"string",
+			"",
+			"bool"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -736,7 +986,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -769,14 +1019,10 @@
 	{
 		"height": 0.0
 	},
-	"output.unsaved_changes":
-	{
-		"height": 118.0
-	},
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 44.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1311,10 +1557,50 @@
 	},
 	"select_symbol":
 	{
-		"height": 107.0,
-		"last_filter": "Edge",
+		"height": 392.0,
+		"last_filter": "room",
 		"selected_items":
 		[
+			[
+				"room",
+				"Room"
+			],
+			[
+				"connection",
+				"Connection"
+			],
+			[
+				"colyus",
+				"ColyseusClient"
+			],
+			[
+				"index",
+				"IndexedDictionary"
+			],
+			[
+				"indexed",
+				"IndexedDictionary"
+			],
+			[
+				"chat",
+				"ChatRoom"
+			],
+			[
+				"client",
+				"Client"
+			],
+			[
+				"state",
+				"StateContainer"
+			],
+			[
+				"network",
+				"NetworkManager"
+			],
+			[
+				"colyse",
+				"ColyseusClient"
+			],
 			[
 				"Edge",
 				"Edge"
@@ -1360,7 +1646,7 @@
 				"Team"
 			]
 		],
-		"width": 392.0
+		"width": 592.0
 	},
 	"settings":
 	{

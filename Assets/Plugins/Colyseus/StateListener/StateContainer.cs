@@ -14,7 +14,7 @@ namespace Colyseus
 	public struct DataChange
 	{
 		public Dictionary<string, string> path;
-		public string operation; // : "add" | "remove" | "replace";
+		//public string operation; // : "add" | "remove" | "replace";
 		public object value;
 	}
 
@@ -143,7 +143,7 @@ namespace Colyseus
 					{
 						var dataChange = new DataChange ();
 						dataChange.path = pathVariables;
-						dataChange.operation = patches [i].operation;
+						//dataChange.operation = patches [i].operation;
 						dataChange.value = patches [i].value;
 
 						listener.callback.Invoke (dataChange);
